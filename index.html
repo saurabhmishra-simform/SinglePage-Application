@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="row">
                     <div class="nav-brand col-xs-12 col-sm-2" id="logo">
-                        <a class="brand-logo">
+                        <a class="brand-logo" href="#">
                             <span class="lockup">
                                 <span class="name">Alex Turnwall<span> 
                             </span>
@@ -23,9 +23,10 @@
                     </div>
                     <div class="nav-menu col-xs-12 col-sm-10">
                         <div class="menu-main-menu-container">
-                            <ul id="menu-main-menu" class="menu"><li id="menu-item-403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-403"><a href="#" id="work">Work</a></li>
-                                <li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2321"><a href="#">Blog</a></li>
-                                <li id="menu-item-1149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1149"><a href="#">About</a></li>
+                            <ul id="menu-main-menu" class="menu"><li id="menu-item-403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-403"><a href="#work">Work</a></li>
+                                <li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2321"><a href="#post">Post</a></li>
+                                <li id="menu-item-1149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1149"><a href="#About">About</a></li>
+                                <li id="menu-item-1149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1149"><a href="#imageSlider">Image Slider</a></li>
                             </ul>
                         </div>      
                     </div>
@@ -33,9 +34,10 @@
             </div>
         </nav>  
     </header>
-    <div class="container-fluid">
-        <div class="section homage-intro main-page-intro" id="mainIntro">
-            <div class="container">
+    
+    <div class="container-fluid" id="mainContainer">
+        <div class="section homage-intro main-page-intro">
+            <div class="container" id="mainIntro">
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
                         <h1 class="display-highlight">Designer &amp; <br/> Product Strategist</h1>
@@ -61,7 +63,30 @@
             </div>
         </div>
 
-        <div class="section p-b-3xl">
+        <div class="container my-7" id="imageSlider">
+            <hr class="rule-lg"/>
+            <h4 class="text-center"><u>Image Slider </u></h4>
+            <div class="divs">
+                <div class="img1">
+                    <img src="img/add1.png" class="images"/>
+                </div>
+                <div class="img2">
+                    <img src="img/add2.PNG" class="images"/>
+                </div>
+                <div class="img3">
+                    <img src="img/add3.PNG" class="images"/>
+                </div>
+                <div class="img4">
+                    <img src="img/add4.PNG" class="images"/>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-light prevNext" id="prev">&#8249;</button>
+                <button type="button" class="btn btn-light prevNext" id="next">&#8250;</button>
+            </div>
+        </div>
+
+        <div class="section p-b-3xl" id="work">
             <div class="container">
                 <hr class="rule-lg"/>
                 <div class="row p-t-xs">
@@ -131,7 +156,7 @@
             </div>
         </div>
 
-        <div class="section p-b-xl">
+        <div class="section p-b-xl" id="post">
             <div class="container">
                 <hr class="rule-lg"/>
                 <div class="row p-t-sm">
@@ -207,7 +232,7 @@
             </div>
         </div>
     </div>
-    <footer class="site-footer hidden-print text-dark">
+    <footer class="site-footer hidden-print text-dark" id="About">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
